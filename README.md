@@ -19,7 +19,7 @@ This project allows you to send bulk WhatsApp messages automatically using Pytho
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/mass_whatsapps_messages.git
+   git clone https://github.com/Frederick-Teye/mass_whatsapp_messages.git
    cd mass_whatsapp_messages
    ```
 
