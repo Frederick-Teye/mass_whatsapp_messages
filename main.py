@@ -2,8 +2,6 @@ import pywhatkit
 import csv
 from datetime import datetime
 
-now = datetime.now()
-current_time = now.strftime("%H:%M")
 
 # Read numbers from CSV file (one column, no header)
 numbers = []
@@ -18,4 +16,4 @@ message = """Hello, this is a test message sent using pywhatkit."""
 
 for number in numbers:
     pywhatkit.sendwhatmsg_instantly(number, message, wait_time=10, tab_close=True, close_time=5)
-    print(f"Message sent to {number} at {current_time}")
+    print(f"Message sent to {number} at {datetime.now().strftime('%H:%M')}")
