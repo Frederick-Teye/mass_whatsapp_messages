@@ -15,5 +15,5 @@ with open("numbers.csv", "r") as file:
 message = """Hello, this is a test message sent using pywhatkit."""
 
 for number in numbers:
-    pywhatkit.sendwhatmsg_instantly(number, message, wait_time=10, tab_close=True, close_time=5)
+    pywhatkit.sendwhatmsg_instantly(number, message, wait_time=15, tab_close=True, close_time=5)
     print(f"Message sent to {number} at {datetime.now().strftime('%H:%M')}")
