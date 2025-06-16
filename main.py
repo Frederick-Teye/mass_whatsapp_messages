@@ -13,7 +13,15 @@ with open("numbers.csv", "r") as file:
 
 
 message = """Hello, this is a test message sent using pywhatkit."""
+image_path = "path/to/your/image.jpg"  # Replace with your image path
 
 for number in numbers:
-    pywhatkit.sendwhatmsg_instantly(number, message, wait_time=15, tab_close=True, close_time=5)
+    pywhatkit.sendwhats_image(
+        receiver=number,
+        img_path=image_path,
+        caption=message,
+        wait_time=15,
+        tab_close=True,
+        close_time=5,
+    )
     print(f"Message sent to {number} at {datetime.now().strftime('%H:%M')}")
