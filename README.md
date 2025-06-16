@@ -60,7 +60,16 @@ This project allows you to send bulk WhatsApp messages automatically using Pytho
 
    - Open `main.py` and change the `message` variable to your desired message.
 
-3. **Run the script:**
+3. **Edit the path to the image:**
+
+   - Place the image in the directory where main.py is located.
+   - Change the value of `image_path` variable to the name of your image. Example:
+
+   ```python
+   image_path = "invitation.png"
+   ```
+
+4. **Run the script:**
 
    ```bash
    python main.py
